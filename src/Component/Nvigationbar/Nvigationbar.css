@@ -1,0 +1,154 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+  }
+  li>.active{
+    border-bottom: 4px solid rgb(8, 241, 241);
+    background-color: rgb(0, 0, 0);
+    color: azure;
+    transition: 0.2s ease-in;
+  }
+  
+  nav{
+    background-color:azure;
+    display: flex;
+    height: auto;
+    box-shadow: 0px 2px 100px #0802024a;
+  }
+  li {
+    float: left;
+  }
+.toggle{
+    display: block;
+    color: #444;
+    text-align: center;
+    padding: 14px 16px;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+   
+}
+.contact a{
+ color: #444 !important;
+
+}
+.contact{
+    display: block;
+    color: #444;
+    text-align: center;
+    padding: 14px 16px;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+}
+.contact a{
+  text-decoration: none;
+  padding-left: 4px;
+}
+.logo{
+    display: block;
+    color: #444;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  li a {
+    display: block;
+    color: #444;;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 4px solid azure;
+    background-color: azure;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .hide{
+        visibility: hidden;
+    }
+    .toggle{
+        display: block;
+        color: #444;
+        text-align: center;
+        padding: 14px 16px;
+        position: absolute;
+        right: 0;
+        visibility:visible;
+        z-index: 20000;
+        cursor: pointer;
+        
+       
+    }
+    
+    .default-mode{
+        position: absolute;
+        top:0px;
+        width: 50%;
+        height: 100vh;
+        background-color:azure;
+        margin-left: -100%;
+        transition: 1s ease-in;
+        box-shadow: 2px 0px 100px #0802024a;
+        z-index: 1000;
+      
+      }
+      .mobile{
+        position: absolute;
+        top:0px;
+        width: 50%;
+        height: 100vh;
+        box-shadow: 2px 0px 100px #0802024a;
+        transition: 1s ease-in;
+        background-color: azure;
+        margin-left:0%;
+        z-index: 1000;
+       
+        
+      }
+    li{
+        float: none;
+        transition: 0s ease-in;
+    }
+    li a {
+        color:black;
+        padding: 14px 16px;
+        text-decoration: none;
+    
+        
+      }
+  nav{
+      height: 50px;
+  }
+    
+    .contact{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        position: absolute;
+        right: 0;
+        visibility:hidden;
+
+    }
+    
+  li>.active{
+    border-bottom:none;
+    border-left: 4px solid rgb(8, 241, 241);
+    background-color: rgb(0, 0, 0);
+    color: azure;
+  }
+
+  }
+  /* .res-mode{
+    position: absolute;
+    top:0px;
+    width: 50%;
+    height: 100vh;
+    background-color: aqua;
+    margin-left: -100% !important; 
+    transition: 3s ease-in-out;
+  } */
